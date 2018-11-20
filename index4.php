@@ -7,45 +7,10 @@
  */
 
 
-
-/* $file = "/Users/yuepeng/Desktop/开放平台额度扩展需求申请函 (1).docx";
- $phpWord = \PhpOffice\PhpWord\IOFactory::load($file);
- $html = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord  ,'HTML');
- $html->save('/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.html');
-
-
-
-
- $html1 = file_get_contents('/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.html');
-
-
- $pdf = new \TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
- $pdf->SetCreator(PDF_CREATOR);
-
-
-
- // 设置自动换页
- $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
- // 设置图像比例因子
- $pdf->setImageScale(1.25);
- // 设置默认字体构造子集模式
- $pdf->setFontSubsetting(true);
-
- // 设置字体 stsongstdlight支持中文
- $pdf->SetFont('stsongstdlight', '', 14);
-
- // 添加一页
- $pdf->AddPage();
-
- $pdf->Ln(5);//换行符
-
- $pdf->writeHTML($html1 ,true, false, true, false, '');
- $pdf->Output('tt.pdf', 'I');*/
-
 ################################################
 
 $doc = '/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.docx';
-$pdf = '/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.pdf';
+$pdf = '/Users/yuepeng/Desktop/开放平台额度扩展需求申请函4.pdf';
 //        export LANG=en_US.UTF-8;/usr/bin/java -jar /data/wwwroot/PDFconvert/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar {word_file} {pdf_file}
 
 $size = filesize($doc);
@@ -70,7 +35,7 @@ var_dump($return_var);*/
 
 
 //第二种
-$command = "/Applications/calibre.app/Contents/calibre-debug.app/Contents/MacOS/ebook-convert  {$doc}   {$pdf}";
+$command = "/Applications/calibre.app/Contents/calibre-debug.app/Contents/MacOS/ebook-convert {$doc}   {$pdf}";
 $t1 = microtime(true);
 
 //exec 参数说明
