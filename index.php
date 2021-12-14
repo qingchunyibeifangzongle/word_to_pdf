@@ -1,22 +1,22 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: yuepeng
+ * User: XXX
  * Date: 2018/11/20
  * Time: 下午5:33
  */
 
 
 
-/* $file = "/Users/yuepeng/Desktop/开放平台额度扩展需求申请函 (1).docx";
+/* $file = "/Users/XXX/Desktop/开放平台额度扩展需求申请函 (1).docx";
  $phpWord = \PhpOffice\PhpWord\IOFactory::load($file);
  $html = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord  ,'HTML');
- $html->save('/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.html');
+ $html->save('/Users/XXX/Desktop/开放平台额度扩展需求申请函.html');
 
 
 
 
- $html1 = file_get_contents('/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.html');
+ $html1 = file_get_contents('/Users/XXX/Desktop/开放平台额度扩展需求申请函.html');
 
 
  $pdf = new \TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
@@ -44,8 +44,8 @@
 
 ################################################
 
-$doc = '/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.docx';
-$pdf = '/Users/yuepeng/Desktop/开放平台额度扩展需求申请函.pdf';
+$doc = '/Users/XXX/Desktop/开放平台额度扩展需求申请函.docx';
+$pdf = '/Users/XXX/Desktop/开放平台额度扩展需求申请函.pdf';
 //        export LANG=en_US.UTF-8;/usr/bin/java -jar /data/wwwroot/PDFconvert/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar {word_file} {pdf_file}
 
 $size = filesize($doc);
